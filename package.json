@@ -1,0 +1,25 @@
+{
+  "name": "personal-profile-automation-testing",
+  "version": "1.0.0",
+  "description": "Automation Testing for Personal Profile Website using Playwright",
+  "homepage": "https://github.com/Aradhya-Bhagwat/Personal-Profile-Automation-Testing#readme",
+  "bugs": {
+    "url": "https://github.com/Aradhya-Bhagwat/Personal-Profile-Automation-Testing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aradhya-Bhagwat/Personal-Profile-Automation-Testing.git"
+  },
+  "license": "ISC",
+  "author": "Aradhya Bhagwat",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "playwright": "^1.61.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^26.0.0"
+  }
+}
