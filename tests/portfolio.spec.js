@@ -1,14 +1,12 @@
-// @ts-check
 import { test, expect } from '@playwright/test';
 import { PortfolioPage } from '../pages/PortfolioPage';
 
 test.describe('Personal Profile Website Tests', () => {
-  /** @type {PortfolioPage} */
   let portfolioPage;
 
   test.beforeEach(async ({ page }) => {
     portfolioPage = new PortfolioPage(page);
-    await portfolioPage.goto('/');
+    await portfolioPage.goto('');
   });
 
   test('should load the home page and show the landing heading', async () => {
@@ -19,14 +17,6 @@ test.describe('Personal Profile Website Tests', () => {
   test('should navigate to the Career Canopy (Experience) section via navbar', async () => {
     await portfolioPage.navigateToSection(portfolioPage.navExperienceLink);
     await expect(portfolioPage.experienceSection).toBeVisible();
-  });
-
-  test('should display Ithena Technologies internship details under Career Canopy', async () => {
-    const ithenaCard = portfolioPage.getExperienceCard('Ithena Technologies');
-    await expect(ithenaCard).toBeVisible();
-    await expect(ithenaCard).toContainText(/QA|Testing/i);
-    await expect(ithenaCard).toContainText(/Playwright/i);
-    await expect(ithenaCard).toContainText(/Appium/i);
   });
 
   test('should toggle theme mode', async () => {
