@@ -1,1 +1,1 @@
-# Personal-Profile-Automation-Testing
+# Personal-Profile-Automation-Testing (Playwright)
