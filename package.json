@@ -14,12 +14,15 @@
   "author": "Aradhya Bhagwat",
   "type": "commonjs",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "report": "node scripts/generate-pdf-report.js"
+  },
   "dependencies": {
     "playwright": "^1.61.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.0",
-    "@types/node": "^26.0.0"
+    "@types/node": "^26.0.0",
+    "pdfkit": "^0.20.2"
   }
 }
